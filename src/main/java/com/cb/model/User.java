@@ -1,6 +1,5 @@
 package com.cb.model;
 
-import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,10 +18,8 @@ public class User {
     private int id;
 
     @Column("first_name")
-    @Size(max = 50)
     private String firstName;
 
-    @Size(max = 50)
     @Column("last_name")
     private String lastName;
 
